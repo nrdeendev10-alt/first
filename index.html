@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>سوق الغنم | منصة ولوحة تحكم تجارة المواشي</title>
+    <meta name="description" content="سوق الغنم والماعز الموثوق في المملكة العربية السعودية مع لوحة تحكم شاملة لإدارة الإعلانات، المربين، الأسعار، الطلبات، والإحصائيات" />
+    <meta name="theme-color" content="#0f4a36" />
+    <meta property="og:title" content="سوق الغنم | منصة ولوحة تحكم تجارة المواشي" />
+    <meta property="og:description" content="سوق الغنم والماعز الموثوق في المملكة العربية السعودية مع لوحة تحكم شاملة لإدارة الإعلانات، المربين، الأسعار، الطلبات، والإحصائيات" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ar_SA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@500;600;700;800&display=swap" />
+    <script>
+      (function(){
+        try {
+          var t = localStorage.getItem('souq-theme');
+          if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', t);
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

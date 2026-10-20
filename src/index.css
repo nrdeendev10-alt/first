@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --font-body: "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  --font-display: "Readex Pro", "IBM Plex Sans Arabic", "Segoe UI", Tahoma, sans-serif;
+  --bg: #f5f7f1;
+  --surface: #ffffff;
+  --surface-2: #edf2e8;
+  --ink: #12281e;
+  --ink-2: #4b5f53;
+  --ink-3: #7a8b80;
+  --line: #dde5d7;
+  --brand: #0f4a36;
+  --brand-hover: #0b3a2a;
+  --on-brand: #ffffff;
+  --brand-soft: #e3efe6;
+  --gold: #b98425;
+  --gold-soft: #f6ebcf;
+  --footer-bg: #0a3123;
+  --footer-ink: #e6efe8;
+  --footer-ink-2: #9bb5a6;
+  --footer-line: #1c4b39;
+  --c1: #0f4a36;
+  --c2: #b98425;
+  --c3: #2c6a78;
+  --c4: #8a4b2a;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b1611;
+  --surface: #122119;
+  --surface-2: #172b20;
+  --ink: #e8f0ea;
+  --ink-2: #a3b8aa;
+  --ink-3: #7c9185;
+  --line: #243a2d;
+  --brand: #1f7f58;
+  --brand-hover: #26946a;
+  --on-brand: #ffffff;
+  --brand-soft: #173225;
+  --gold: #e0b050;
+  --gold-soft: #2f2813;
+  --footer-bg: #07231a;
+  --footer-ink: #e6efe8;
+  --footer-ink-2: #8fae9d;
+  --footer-line: #173b2d;
+  --c1: #58d39a;
+  --c2: #e0b050;
+  --c3: #6cc0d1;
+  --c4: #d9946a;
+  color-scheme: dark;
+}
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+  font-family: var(--font-body);
+}
+
+body {
+  margin: 0;
+  direction: rtl;
+  text-align: right;
+  background-color: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+svg.i {
+  width: 1.15em;
+  height: 1.15em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+
+/* Traditional Sadu Weaving Pattern Band */
+.sadu {
+  height: 14px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='16' viewBox='0 0 64 16'%3E%3Crect width='64' height='16' fill='%230f4a36'/%3E%3Cpath d='M16 2l6 6-6 6-6-6z' fill='%23b98425'/%3E%3Cpath d='M48 2l6 6-6 6-6-6z' fill='%23b98425'/%3E%3Cpath d='M32 4l4 4-4 4-4-4z' fill='%23f6ebcf'/%3E%3Cpath d='M0 8h4M28 8h-1M60 8h4' stroke='%23c8402e' stroke-width='2'/%3E%3Ccircle cx='32' cy='8' r='1.2' fill='%230f4a36'/%3E%3C/svg%3E") repeat-x;
+  background-size: 64px 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hide scrollbars for ticker */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

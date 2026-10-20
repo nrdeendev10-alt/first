@@ -1,0 +1,6 @@
+{
+  "name": "سوق الغنم | منصة ولوحة تحكم تجارة المواشي",
+  "description": "سوق الغنم والماعز الموثوق في المملكة العربية السعودية مع لوحة تحكم شاملة لإدارة الإعلانات، المربين، الأسعار، الطلبات، والإحصائيات",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
